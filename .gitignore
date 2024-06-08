@@ -42,5 +42,5 @@ bin/
 submissions/
 
 ### Java Resources Folder ###
-src/main/resources/
-resources/
+/resources/
+/src/main/resources/

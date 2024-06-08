@@ -22,7 +22,7 @@ This Java project uses machine learning to predict passenger survival on the Tit
 
 1. Clone the repository:
    ```
-   git clone https://github.com/ofluffydev/titanic-survival-prediction.git
+   git clone https://github.com/ofluffydev/Kaggle-Titanic.git
    ```
 
 2. Ensure that you have the required dependencies in your project's classpath.

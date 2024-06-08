@@ -81,10 +81,16 @@ public class App {
     }
 
     private static String FindOutputFile() {
-        String outputFile = "predicted_survivals.csv";
+        String submissionsFolder = "submissions";
+        String outputFile = submissionsFolder + "/predicted_survivals.csv";
+        File folder = new File(submissionsFolder);
+        if (!folder.exists()) {
+            //noinspection ResultOfMethodCallIgnored
+            folder.mkdir();
+        }
         int i = 1;
         while (new File(outputFile).exists()) {
-            outputFile = "predicted_survivals" + i + ".csv";
+            outputFile = submissionsFolder + "/predicted_survivals" + i + ".csv";
             i++;
         }
         return outputFile;
@@ -123,7 +129,6 @@ public class App {
 
         Instances instances = new Instances("Titanic Dataset", attributes, testingData.size());
         instances.setClassIndex(instances.numAttributes() - 1);
-        // Add the instances
         for (TestPassenger passenger : testingData) {
             double[] values = new double[instances.numAttributes()];
             values[0] = Double.parseDouble(passenger.getPclass());

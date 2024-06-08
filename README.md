@@ -1,4 +1,4 @@
-[![Java CI with Gradle](https://github.com/ofluffydev/Kaggle-Titanic/actions/workflows/gradle.yml/badge.svg?branch=main)](https://github.com/ofluffydev/Kaggle-Titanic/actions/workflows/gradle.yml)
+[![Gradle build](https://github.com/ofluffydev/Kaggle-Titanic/actions/workflows/gradle.yml/badge.svg?branch=main)](https://github.com/ofluffydev/Kaggle-Titanic/actions/workflows/gradle.yml)
 
 # Titanic Survival Prediction
 

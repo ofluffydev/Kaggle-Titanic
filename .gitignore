@@ -40,3 +40,6 @@ bin/
 
 ### Submission files ###
 submissions/
+
+### Java Resources Folder ###
+src/main/resources/
